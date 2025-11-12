@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Clock</title>
+  <style>
+    #clock {
+      font-size: 32px;
+      font-weight: bold;
+      color: darkgreen;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Task 2: Digital Clock</h2>
+  <div id="clock"></div>
+
+  <script>
+    // Function to display current time
+    function showTime() {
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+
+      // Format time (add leading zeros)
+      const timeString = 
+        hours.toString().padStart(2, '0') + ":" +
+        minutes.toString().padStart(2, '0') + ":" +
+        seconds.toString().padStart(2, '0');
+
+      // Display time in the div
+      document.getElementById("clock").textContent = timeString;
+    }
+
+    // Update the clock every 1 second (1000 milliseconds)
+    setInterval(showTime, 1000);
+
+    // Show time immediately when the page loads
+    showTime();
+  </script>
+</body>
+</html>

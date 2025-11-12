@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Division by Zero Example</title>
+</head>
+<body>
+  <h2>Task: Error Handling in JavaScript</h2>
+
+  <script>
+    try {
+      // Declare two numbers
+      let numerator = 10;
+      let denominator = 0;
+
+      // Check for division by zero
+      if (denominator === 0) {
+        // Manually throw an error
+        throw new Error("Cannot divide by zero!");
+      }
+
+      // Perform division if denominator is not zero
+      let result = numerator / denominator;
+      console.log("Result: " + result);
+
+    } catch (error) {
+      // Handle the error
+      console.error("Error: " + error.message);
+      alert("Error: " + error.message);
+    } finally {
+      // This block always runs
+      console.log("Division operation completed.");
+    }
+  </script>
+</body>
+</html>

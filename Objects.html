@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Object Example</title>
+</head>
+<body>
+  <h2>Task: Working with JavaScript Objects</h2>
+
+  <script>
+    // Create a JavaScript object named 'car'
+    let car = {
+      brand: "Toyota",
+      model: "Corolla",
+      year: 2020
+    };
+
+    // Access and print the car’s brand and model
+    console.log("Car Brand:", car.brand);
+    console.log("Car Model:", car.model);
+
+    // Update the 'year' property
+    car.year = 2024;
+
+    // Add a new property 'color' to the car object
+    car.color = "Red";
+
+    // Display the updated object
+    console.log("Updated Car Object:", car);
+
+    // Optional: Show the result in an alert
+    alert(
+      "Car Details:\nBrand: " + car.brand +
+      "\nModel: " + car.model +
+      "\nYear: " + car.year +
+      "\nColor: " + car.color
+    );
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day of the Week (Switch Statement)</title>
+</head>
+<body>
+  <h2>JavaScript switch Example</h2>
+
+  <script>
+    // Get user input (1 to 7)
+    let dayNumber = parseInt(prompt("Enter a number (1-7) for the day of the week:"));
+
+    let dayName;
+
+    // Use switch statement to determine the day
+    switch (dayNumber) {
+      case 1:
+        dayName = "Monday";
+        break;
+      case 2:
+        dayName = "Tuesday";
+        break;
+      case 3:
+        dayName = "Wednesday";
+        break;
+      case 4:
+        dayName = "Thursday";
+        break;
+      case 5:
+        dayName = "Friday";
+        break;
+      case 6:
+        dayName = "Saturday";
+        break;
+      case 7:
+        dayName = "Sunday";
+        break;
+      default:
+        dayName = "Invalid input! Please enter a number between 1 and 7.";
+    }
+
+    // Display result
+    console.log("Day:", dayName);
+    alert("Day: " + dayName);
+  </script>
+</body>
+</html>
